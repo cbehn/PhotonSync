@@ -54,6 +54,7 @@ void setup() {
   FastLED.addLeds<WS2812, DATA_PIN, GRB>(leds, NUM_LEDS);
   FastLED.setBrightness(MAX_BRIGHTNESS);
   FastLED.clear();
+  leds[1].setRGB(0, 255, 0)
 
   // Set device as a Wi-Fi station
   WiFi.mode(WIFI_STA);
